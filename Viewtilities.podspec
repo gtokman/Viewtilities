@@ -9,16 +9,12 @@
 Pod::Spec.new do |s|
   s.name             = 'Viewtilities'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of Viewtilities.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+  s.summary          = 'A collection of useful UIView utilities.'
+  s.ios.deployment_target = '11.0'
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+  A collection of useful UIView utilities. These utility methods are meant to speed up
+  your workflow by abstracting common extension methods into a library.
                        DESC
 
   s.homepage         = 'https://github.com/gtokman/Viewtilities'
@@ -26,17 +22,11 @@ TODO: Add long description of the pod here.
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'gtokman' => 'hello@garytokman.me' }
   s.source           = { :git => 'https://github.com/gtokman/Viewtilities.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.social_media_url = 'https://twitter.com/bestgaryever'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '11.0'
 
-  s.source_files = 'Viewtilities/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'Viewtilities' => ['Viewtilities/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.source_files = 'Viewtilities/**/*.{swift}'
+  s.frameworks = 'UIKit'
+  s.swift_version = "4.2"
 end
