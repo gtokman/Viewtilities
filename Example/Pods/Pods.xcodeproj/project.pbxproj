@@ -8,14 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		108048170BEE775FA4E7383F5E8E42E8 /* Pods-Viewtilities_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D5A6DE87DA5170596568EE48673831E3 /* Pods-Viewtilities_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		20B9A9E121F26C1D0006FEA4 /* Corner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B9A9DF21F26BCC0006FEA4 /* Corner.swift */; };
+		20B9A9ED21F279440006FEA4 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A682DA7A59E7743F78BDA3DF9F0104E9 /* UIView+Extensions.swift */; };
+		20B9A9EE21F279470006FEA4 /* Corner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B9A9DF21F26BCC0006FEA4 /* Corner.swift */; };
+		20B9A9F121F27B350006FEA4 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 20B9A9F021F27B350006FEA4 /* .gitkeep */; };
 		83D8E39E6222F9E3AB45CF458F05896F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
 		9EFBD64E1C5529A8C3187B629C35CDC8 /* Pods-Viewtilities_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A2BD23A6AE03C6A27A673231D9DDF333 /* Pods-Viewtilities_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A3878E95D10A7A23968769B157A4564D /* Pods-Viewtilities_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BD240B5CCF75D2FA30EF9B633D3AADA9 /* Pods-Viewtilities_Example-dummy.m */; };
 		A3C1B6967BF6DF320BCF4D8B1B82DDDC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
 		ECAF5D58C68BD6A3A6259BAC8BCC2BFD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
 		EF90EAC0F068A163BDC70A34363E2476 /* Pods-Viewtilities_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2CD370C569F791C40AA5F311D219BA /* Pods-Viewtilities_Tests-dummy.m */; };
-		F373B53BC0C5FDB6D133A709EF5B2FD6 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A682DA7A59E7743F78BDA3DF9F0104E9 /* UIView+Extensions.swift */; };
 		F49D3599399E33EE697B1046E9D8790F /* Viewtilities-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FF39319B59D3D5645400B0E22952536D /* Viewtilities-dummy.m */; };
 		FCFE7399C163562CB52E086E33FCFC7D /* Viewtilities-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7DE2CA96754D4127DC995BFFB05B088F /* Viewtilities-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
@@ -45,6 +46,7 @@
 		186B608940A39EAD5DE4ACC668F641BE /* Pods-Viewtilities_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Viewtilities_Example-frameworks.sh"; sourceTree = "<group>"; };
 		20730FF90FB2EE8D97552048FA32F68B /* Pods_Viewtilities_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Viewtilities_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		20B9A9DF21F26BCC0006FEA4 /* Corner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Corner.swift; sourceTree = "<group>"; };
+		20B9A9F021F27B350006FEA4 /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; name = .gitkeep; path = ../../.gitkeep; sourceTree = "<group>"; };
 		274A135FD1C6E82C4AE1A4D5C516A4B3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2AFA0539C602111650C37F896446D7BE /* Pods-Viewtilities_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Viewtilities_Example-resources.sh"; sourceTree = "<group>"; };
 		2E2CD370C569F791C40AA5F311D219BA /* Pods-Viewtilities_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Viewtilities_Tests-dummy.m"; sourceTree = "<group>"; };
@@ -104,20 +106,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		20B9A9E221F26E790006FEA4 /* Classes */ = {
+		20B9A9E421F2780C0006FEA4 /* Viewtilities */ = {
 			isa = PBXGroup;
 			children = (
+				20B9A9EF21F27AC80006FEA4 /* Assets */,
+				20B9A9E521F2780C0006FEA4 /* Classes */,
+			);
+			path = Viewtilities;
+			sourceTree = "<group>";
+		};
+		20B9A9E521F2780C0006FEA4 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A682DA7A59E7743F78BDA3DF9F0104E9 /* UIView+Extensions.swift */,
 				20B9A9DF21F26BCC0006FEA4 /* Corner.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
 		};
-		20B9A9E321F26EA20006FEA4 /* Extensions */ = {
+		20B9A9EF21F27AC80006FEA4 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				A682DA7A59E7743F78BDA3DF9F0104E9 /* UIView+Extensions.swift */,
+				20B9A9F021F27B350006FEA4 /* .gitkeep */,
 			);
-			path = Extensions;
+			name = Assets;
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 		44D5347904CF754D6785B84253F2574A /* iOS */ = {
@@ -141,8 +154,7 @@
 		6B06EDC99746E6E6CBB4215FEE218B4F /* Viewtilities */ = {
 			isa = PBXGroup;
 			children = (
-				20B9A9E321F26EA20006FEA4 /* Extensions */,
-				20B9A9E221F26E790006FEA4 /* Classes */,
+				20B9A9E421F2780C0006FEA4 /* Viewtilities */,
 				47169A14F0A3849EB1846CFC94E4323F /* Pod */,
 				9EE0012A875D48A2AF1A5C0291115D05 /* Support Files */,
 			);
@@ -380,6 +392,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20B9A9F121F27B350006FEA4 /* .gitkeep in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,8 +418,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F373B53BC0C5FDB6D133A709EF5B2FD6 /* UIView+Extensions.swift in Sources */,
-				20B9A9E121F26C1D0006FEA4 /* Corner.swift in Sources */,
+				20B9A9ED21F279440006FEA4 /* UIView+Extensions.swift in Sources */,
+				20B9A9EE21F279470006FEA4 /* Corner.swift in Sources */,
 				F49D3599399E33EE697B1046E9D8790F /* Viewtilities-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -453,7 +466,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-Viewtilities_Tests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-Viewtilities_Tests/Pods-Viewtilities_Tests.modulemap";
@@ -488,7 +501,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-Viewtilities_Example/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-Viewtilities_Example/Pods-Viewtilities_Example.modulemap";
@@ -714,7 +727,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-Viewtilities_Example/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-Viewtilities_Example/Pods-Viewtilities_Example.modulemap";
@@ -749,7 +762,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-Viewtilities_Tests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-Viewtilities_Tests/Pods-Viewtilities_Tests.modulemap";
