@@ -1,0 +1,16 @@
+PODS:
+  - Viewtilities (0.1.0)
+
+DEPENDENCIES:
+  - Viewtilities (from `../`)
+
+EXTERNAL SOURCES:
+  Viewtilities:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Viewtilities: 2c64504b21cb15f60def40c3af0f8a618f8fdfb4
+
+PODFILE CHECKSUM: e245ed20202bc28f5069f84343aa38d53f31b89b
+
+COCOAPODS: 1.5.3
