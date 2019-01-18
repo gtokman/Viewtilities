@@ -5,6 +5,7 @@
 //  Created by Gary Tokman on 1/18/19.
 //
 
+/// Corner values that map to `CACornerMask`
 public enum Corner {
     case bottomLeft, bottomRight, topLeft, topRight, all, top, bottom
 
