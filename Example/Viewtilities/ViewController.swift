@@ -14,14 +14,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         let myView = UIView()
-        // Set corner radius
-        myView.round(to: 10)
 
-        // Set shadow
-        myView.shadow(offset: .init(width: 0, height: 2), radius: 5, opacity: 0.5)
-
-        // Set border
-//        myView.border(width: 1)
+        // Set corner radius and shadow
+        myView.add(.cornerRadius(.default), .shadow(.default))
 
         myView.backgroundColor = .lightGray
         myView.translatesAutoresizingMaskIntoConstraints = false
