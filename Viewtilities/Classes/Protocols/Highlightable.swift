@@ -9,7 +9,6 @@ protocol Highlightable {}
 
 internal extension Highlightable where Self: UIButton {
 
-
     /// Set a background color for a specific button state
     ///
     /// - Parameters:

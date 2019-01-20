@@ -6,3 +6,4 @@
 //
 
 extension UIView: ViewModifiable, Roundable, Shadowable, Borderable {}
+extension UIButton: Highlightable {}

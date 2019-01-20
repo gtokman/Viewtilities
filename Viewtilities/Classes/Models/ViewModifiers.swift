@@ -16,4 +16,5 @@ public enum ViewModifier {
     case shadow(ShadowType)
     case cornerRadius(CornerType)
     case border(BorderType)
+    case background(color: UIColor, state: UIControl.State)
 }
