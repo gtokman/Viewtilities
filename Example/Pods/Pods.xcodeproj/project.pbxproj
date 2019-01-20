@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		108048170BEE775FA4E7383F5E8E42E8 /* Pods-Viewtilities_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D5A6DE87DA5170596568EE48673831E3 /* Pods-Viewtilities_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2077C26321F4158000954AC6 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2077C26221F4158000954AC6 /* BaseView.swift */; };
+		2077C26521F416C600954AC6 /* ModifiableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2077C26421F416C600954AC6 /* ModifiableView.swift */; };
+		2077C26721F4189400954AC6 /* Highlightable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2077C26621F4189400954AC6 /* Highlightable.swift */; };
 		20B9A9ED21F279440006FEA4 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A682DA7A59E7743F78BDA3DF9F0104E9 /* UIView+Extensions.swift */; };
 		20B9A9EE21F279470006FEA4 /* Corner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B9A9DF21F26BCC0006FEA4 /* Corner.swift */; };
 		20B9A9F421F27BDB0006FEA4 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 20B9A9F321F27BDB0006FEA4 /* .gitkeep */; };
@@ -53,6 +56,9 @@
 		105A5C210ACB414F59D54E4B4C94C8C3 /* Viewtilities-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Viewtilities-prefix.pch"; sourceTree = "<group>"; };
 		186B608940A39EAD5DE4ACC668F641BE /* Pods-Viewtilities_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Viewtilities_Example-frameworks.sh"; sourceTree = "<group>"; };
 		20730FF90FB2EE8D97552048FA32F68B /* Pods_Viewtilities_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Viewtilities_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2077C26221F4158000954AC6 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		2077C26421F416C600954AC6 /* ModifiableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifiableView.swift; sourceTree = "<group>"; };
+		2077C26621F4189400954AC6 /* Highlightable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Highlightable.swift; sourceTree = "<group>"; };
 		20B9A9DF21F26BCC0006FEA4 /* Corner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Corner.swift; sourceTree = "<group>"; };
 		20B9A9F321F27BDB0006FEA4 /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		20FEB23E21F3FAFE00D559EA /* ShadowType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowType.swift; sourceTree = "<group>"; };
@@ -122,6 +128,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2077C26121F4156F00954AC6 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				2077C26221F4158000954AC6 /* BaseView.swift */,
+				2077C26421F416C600954AC6 /* ModifiableView.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
 		20B9A9E421F2780C0006FEA4 /* Viewtilities */ = {
 			isa = PBXGroup;
 			children = (
@@ -134,6 +149,7 @@
 		20B9A9E521F2780C0006FEA4 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				2077C26121F4156F00954AC6 /* CustomViews */,
 				20FEB24A21F406C500D559EA /* Protocols */,
 				20FEB23D21F3FAC300D559EA /* Models */,
 				20FEB23C21F3FA4100D559EA /* Types */,
@@ -184,6 +200,7 @@
 				20FEB24D21F4074000D559EA /* Roundable.swift */,
 				20FEB24F21F4074B00D559EA /* Borderable.swift */,
 				20FEB25121F4075400D559EA /* Shadowable.swift */,
+				2077C26621F4189400954AC6 /* Highlightable.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -474,6 +491,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				20B9A9ED21F279440006FEA4 /* UIView+Extensions.swift in Sources */,
+				2077C26321F4158000954AC6 /* BaseView.swift in Sources */,
 				20FEB24921F400D200D559EA /* ViewModifiers.swift in Sources */,
 				20FEB25221F4075400D559EA /* Shadowable.swift in Sources */,
 				20B9A9EE21F279470006FEA4 /* Corner.swift in Sources */,
@@ -484,6 +502,8 @@
 				F49D3599399E33EE697B1046E9D8790F /* Viewtilities-dummy.m in Sources */,
 				20FEB24C21F406D500D559EA /* ViewModifiable.swift in Sources */,
 				20FEB24421F3FCF200D559EA /* ShadowType.swift in Sources */,
+				2077C26521F416C600954AC6 /* ModifiableView.swift in Sources */,
+				2077C26721F4189400954AC6 /* Highlightable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
