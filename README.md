@@ -11,27 +11,21 @@ when building your UI.
 ## Examples
 **Round Corners**
 ```
-myView.round(corners: [.all], to: 10)
+myView.add(.cornerRadius(.custom(corners: [.all], radius: 10)))
 ```
-<div style="text-align:center">
-<img width="200" alt="round" src="https://user-images.githubusercontent.com/12258850/51417075-6bb40300-1b4a-11e9-8c20-ef2830852d8d.png">
-</div>
+<img align="center" width="200" alt="round" src="https://user-images.githubusercontent.com/12258850/51417075-6bb40300-1b4a-11e9-8c20-ef2830852d8d.png">
 
 **Shadow**
 ```
-myView.shadow(offset: .init(width: 0, height: 2), radius: 5, opacity: 0.5)
+myView.add(.shadow(.custom(offset: .init(width: 0, height: 2), radius: 5, opacity: 0.25, color: .black)))
 ```
-<div style="text-align:center">
-<img  width="200" alt="round shadow" src="https://user-images.githubusercontent.com/12258850/51417074-6bb40300-1b4a-11e9-8b90-27ff96188699.png">
-</div>
+<img  align="center" width="200" alt="round shadow" src="https://user-images.githubusercontent.com/12258850/51417074-6bb40300-1b4a-11e9-8b90-27ff96188699.png">
 
 **Border**
 ```
-myView.border(color: .black, width: 1)
+myView.add(.border(.custom(color: .black, width: 1)))
 ```
-<div style="text-align:center">
-<img width="200" alt="border" src="https://user-images.githubusercontent.com/12258850/51417073-6bb40300-1b4a-11e9-852b-81ca10413dc5.png">
-</div>
+<img align="center" width="200" alt="border" src="https://user-images.githubusercontent.com/12258850/51417073-6bb40300-1b4a-11e9-852b-81ca10413dc5.png">
 
 ## Installation
 
