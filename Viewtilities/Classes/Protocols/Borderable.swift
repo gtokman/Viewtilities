@@ -5,8 +5,6 @@
 //  Created by Gary Tokman on 1/19/19.
 //
 
-import Foundation
-
 protocol Borderable {}
 
 internal extension Borderable where Self: UIView {
