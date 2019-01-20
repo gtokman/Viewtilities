@@ -9,7 +9,7 @@
 public enum Corner {
     case bottomLeft, bottomRight, topLeft, topRight, all, top, bottom
 
-    public var cornerMask: CACornerMask {
+    internal var cornerMask: CACornerMask {
         switch self {
         case .bottomRight:
             return CACornerMask.layerMaxXMaxYCorner
